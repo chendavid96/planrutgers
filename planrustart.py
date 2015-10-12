@@ -6,16 +6,6 @@ url = "https://sis.rutgers.edu/soc/courses.json?"
 arrayOfClasses = []
 dictOfClasses = OrderedDict()
 urlstr = ""
-# urlparse.uses_netloc.append("postgres")
-# url = urlparse.urlparse(os.environ["postgres://jbyndnforddiae:zuEvNDnHuXN7YCZdHoDps2mVJN@ec2-75-101-162-243.compute-1.amazonaws.com:5432/d58psn55ra2cvs"])
-#
-# conn = psycopg2.connect(
-#     database=url.path[1:],
-#     user=url.username,
-#     password=url.password,
-#     host=url.hostname,
-#     port=url.port
-# )
 
 app = Flask(__name__)
 
@@ -250,7 +240,7 @@ def durationCalc(starttime, endtime):
 
 if __name__ == '__main__':
 
-    app.debug = True
+    # app.debug = True
     # Bind to PORT if defined, otherwise default to 5000.
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
