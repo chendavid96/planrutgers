@@ -1,4 +1,2 @@
 # planrutgers
-aesthetically pleasing schedule for your RU courses
-provides a well-designed calendar upon confirmation of entered classes are valid and supported
-furthur support for app includes customized bus scheduling and travel times between each class from a starting point of residence
+aesthetically pleasing schedule for your RU courses. provides a well-designed calendar upon confirmation of entered classes are valid and supported. furthur support for app includes customized bus scheduling and travel times between each class from a starting point of residence. currently hosted on planrutgers.com as a heroku app using postgresql as db. the python code excludes all push info to postgresql so will not run until updated by user. enjoy.

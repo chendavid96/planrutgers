@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>PlanRU</title>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/calendarcss.css') }}">
+	<script src="{{ url_for('static',filename='js/jquery-1.11.3.min.js') }}"> </script>
+	<script src="{{ url_for('static',filename='js/jquery.color-2.1.2.min.js') }}"> </script>
+	<script src="{{ url_for('static',filename='js/calendarmake.js') }}"> </script>
+	<script type="text/javascript">
+	loadCalendar({{ information|tojson }});
+	</script>
+
+</head>
+
+<body>
+
+	<div id="logodiv">
+		<center><img src="{{ url_for('static',filename='images/logo.png') }}" /><!-- <h1>PlanRU</h1><h2>by WOLF</h2> --></center>
+	</div>
+
+	<div id="legend">
+		<div class="spacer"></div>
+		<div class="livingston"><h2>LIVINGSTON</h2></div>
+		<div class="spacer"></div>
+		<div class="busch"><h2>BUSCH</h2></div>
+		<div class="spacer"></div>
+		<div class="cookdouglass"><h2>COOK/DOUGLASS</h2></div>
+		<div class="spacer"></div>
+		<div class="collegeave"><h2>COLLEGE AVE</h2></div>
+		<div class="spacer"></div>
+		<div class="unknowncampus"><h2>UNKNOWN</h2></div>
+	</div>
+
+	<div id="calendarwrapper">
+
+		<div class="column time">
+			<div class="hour spacer"></div>
+			<div class="hour odd"><h3 class="hourtext">8AM</h3></div>
+			<div class="hour even"><h3 class="hourtext">9AM</h3></div>
+			<div class="hour odd"><h3 class="hourtext">10AM</h3></div>
+			<div class="hour even"><h3 class="hourtext">11AM</h3></div>
+			<div class="hour odd"><h3 class="hourtext">12PM</h3></div>
+			<div class="hour even"><h3 class="hourtext">1PM</h3></div>
+			<div class="hour odd"><h3 class="hourtext">2PM</h3></div>
+			<div class="hour even"><h3 class="hourtext">3PM</h3></div>
+			<div class="hour odd"><h3 class="hourtext">4PM</h3></div>
+			<div class="hour even"><h3 class="hourtext">5PM</h3></div>
+			<div class="hour odd"><h3 class="hourtext">6PM</h3></div>
+			<div class="hour even"><h3 class="hourtext">7PM</h3></div>
+			<div class="hour odd"><h3 class="hourtext">8PM</h3></div>
+			<div class="hour even"><h3 class="hourtext">9PM</h3></div>
+			<div class="hour odd"><h3 class="hourtext">10PM</h3></div>
+			<div class="hour even"><h3 class="hourtext">11PM</h3></div>
+		</div>
+
+		<div class="column sunday odd">
+			<div class="daytextdiv odd first"><h3 class="daytext">SUN</h3></div>
+		</div>
+
+		<div class="column monday even">
+			<div class="daytextdiv even"><h3 class="daytext">MON</h3></div>
+		</div>
+
+		<div class="column tuesday odd">
+			<div class="daytextdiv odd"><h3 class="daytext">TUE</h3></div>
+		</div>
+
+		<div class="column wednesday even">
+			<div class="daytextdiv even"><h3 class="daytext">WED</h3></div>
+		</div>
+
+		<div class="column thursday odd">
+			<div class="daytextdiv odd"><h3 class="daytext">THU</h3></div>
+		</div>
+
+		<div class="column friday even">
+			<div class="daytextdiv even"><h3 class="daytext">FRI</h3></div>
+		</div>
+
+		<div class="column saturday odd">
+			<div class="daytextdiv odd"><h3 class="daytext">SAT</h3></div>
+		</div>
+
+		<div class="hourseparator spacer"></div>
+		<div class="hourseparator"></div>
+		<div class="hourseparator"></div>
+		<div class="hourseparator"></div>
+		<div class="hourseparator"></div>
+		<div class="hourseparator"></div>
+		<div class="hourseparator"></div>
+		<div class="hourseparator"></div>
+		<div class="hourseparator"></div>
+		<div class="hourseparator"></div>
+		<div class="hourseparator"></div>
+		<div class="hourseparator"></div>
+		<div class="hourseparator"></div>
+		<div class="hourseparator"></div>
+		<div class="hourseparator"></div>
+		<div class="hourseparator last"></div>
+	</div>
+
+	<div id="settings">
+		<a id="customlinktext" href="#" onclick="customlinking();return false;">LINK</a>
+	</div>
+
+
+</body>
+
+<footer>
+	<h2>
+		<a href="https://github.com/dahchen" target="_blank">@dahchen</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		<a href="https://github.com/dahchen/planrutgers" target="_blank">git</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		<a href="/faqs" target="_blank">FAQs</a>
+	</h2>
+</footer>
+
+</html>

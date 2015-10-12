@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>PlanRU</title>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/css.css') }}">
+	<script src="{{ url_for('static',filename='js/jquery-1.11.3.min.js') }}"> </script>
+	<script src="{{ url_for('static',filename='js/jquery.color-2.1.2.min.js') }}"> </script>
+	<script src="{{ url_for('static',filename='js/backend.js') }}"> </script>
+</head>
+
+<body>
+	<div id="buttondiv">
+		<button id="addclassbutton" onclick="showClassInputAreas()">Add Your Classes</button>
+		<button type="submit" form="coursesformsubmit" id="submitbutton">Submit</button>
+	</div>
+
+	<div id="logodiv">
+		<center><img src="{{ url_for('static',filename='images/logo.png') }}" /><!-- <h1>PlanRU</h1><h2>by WOLF</h2> --></center>
+	</div>
+
+	<form id="coursesformsubmit" action="javascript:submit()" method="post" autocomplete="off">
+		<div id="inputarea">
+
+			<div class="courseinputdiv">
+				<input class="subject" type="text" maxlength="3" pattern="[0-9]{3}" title="e.g. 640 or 198 or 165" placeholder="Subject Number" />
+				<input class="course" type="text" maxlength="3" pattern="[0-9]{3}" title="e.g. 211 or 111 or 205" placeholder="Course Number" />
+				<input class="section" type="text" maxlength="2" pattern="([0-9A-Za-z]{2})|([1-9]{1})" title="e.g. 04 or C5 or H1" placeholder="Section" />
+			</div>
+
+			<div class="courseinputdiv">
+				<input class="subject" type="text" maxlength="3" pattern="[0-9]{3}" title="e.g. 640 or 198 or 165" placeholder="Subject Number" />
+				<input class="course" type="text" maxlength="3" pattern="[0-9]{3}" title="e.g. 211 or 111 or 205" placeholder="Course Number" />
+				<input class="section" type="text" maxlength="2" pattern="([0-9A-Za-z]{2})|([1-9]{1})" title="e.g. 04 or C5 or H1" placeholder="Section" />
+			</div>
+
+			<div class="courseinputdiv">
+				<input class="subject" type="text" maxlength="3" pattern="[0-9]{3}" title="e.g. 640 or 198 or 165" placeholder="Subject Number" />
+				<input class="course" type="text" maxlength="3" pattern="[0-9]{3}" title="e.g. 211 or 111 or 205" placeholder="Course Number" />
+				<input class="section" type="text" maxlength="2" pattern="([0-9A-Za-z]{2})|([1-9]{1})" title="e.g. 04 or C5 or H1" placeholder="Section" />
+			</div>
+
+			<div class="courseinputdiv">
+				<input class="subject" type="text" maxlength="3" pattern="[0-9]{3}" title="e.g. 640 or 198 or 165" placeholder="Subject Number" />
+				<input class="course" type="text" maxlength="3" pattern="[0-9]{3}" title="e.g. 211 or 111 or 205" placeholder="Course Number" />
+				<input class="section" type="text" maxlength="2" pattern="([0-9A-Za-z]{2})|([1-9]{1})" title="e.g. 04 or C5 or H1" placeholder="Section" />
+			</div>
+
+		</div>
+	</form>
+
+	<div id="loadingscreen">
+	</div>
+
+</body>
+
+<footer>
+	<h2><a href="https://github.com/dahchen" target="_blank">@dahchen</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		<a href="https://github.com/dahchen/planrutgers" target="_blank">git</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		<a href="/faqs" target="_blank">FAQs</a></h2>
+</footer>
+
+</html>

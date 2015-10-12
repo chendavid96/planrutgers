@@ -1,0 +1,173 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Oswald Light'), local('Oswald-Light'), url(fonts/l1cOQ90roY9yC7voEhngDBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Oswald Light'), local('Oswald-Light'), url(fonts/HqHm7BVC_nzzTui2lzQTDVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(fonts/yg0glPPxXUISnKUejCX4qfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(fonts/pEobIV_lL25TKBpqVI_a2w.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Oswald Bold'), local('Oswald-Bold'), url(fonts/dI-qzxlKVQA6TUC5RKSb3xJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Oswald Bold'), local('Oswald-Bold'), url(fonts/bH7276GfdCjMjApa_dkG6VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Montserrat);
+
+body {
+	margin: 0;
+}
+
+#maincontainer {
+	width: 100%;
+	background-color: none;
+}
+
+#plannercontainer {
+	margin: 0 auto; /*centers the planner*/
+	background-color: none;
+}
+
+#timescontainer {
+	background-color: none;
+	float: left;
+
+}
+
+.dayObj {
+	background-color: none;
+	float: left;
+/*	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-left: 1px white dotted;*/
+}
+
+.titleObj {
+	background-color: white;
+	text-align: center;
+	box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-left: 1px #999999 dotted;
+  border-bottom: 1px white dotted;
+}
+
+.titleText {
+	color: #999999;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.hourObj {
+	background-color: white;
+	text-align: center;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-top: 1px #ED4848 dotted;
+}
+
+.oddNum {
+	background-color: white; /*change back to white*/
+}
+
+#blankhourObj, .titleObj.oddNum.first {
+	background-color: white;
+	border-top: none;
+	border-left: none;
+}
+
+.hourText {
+	color: #999999;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.oddNum .hourText, .oddNum .titleText {
+	color: #ED4848;
+}
+
+.classObj {
+	background-color: #999999;
+	text-align: center;
+/*	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-left: 1px #999999 dotted;
+    border-right: 1px #999999 dotted;
+    -webkit-print-color-adjust: exact; FOR @media USE*/
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+.classText {
+	color: white;
+	font-weight: 300;
+	margin: 0 auto;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	text-transform: uppercase;
+}
+/* campus class color CSS: */
+
+.classObj.busch {
+	background-color: blue !important;
+}
+
+.classObj.livi {
+	background-color: orange !important;
+}
+
+.classObj.ca {
+	background-color: red !important;
+}
+
+.classObj.cd {
+	background-color: green !important;
+}
+
+.classObj.unknown {
+	background-color: gray !important;
+}
+
+/*All the hover styles are here: */
