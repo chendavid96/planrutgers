@@ -13,4 +13,6 @@ Communicates with Python backend and the official Rutgers' Schedule of Classes t
 ## Furthur Information
 The app is currently in beta testing stage and can be reached at [planrutgers.com](planrutgers.com).
 
-Currently hosted on Heroku as a single-dyno app so it may take a few moments to load during low traffic interims. If you would like to help me with this app, feel free to email me at chen.david@rutgers.edu with any relevant credentials || request to fork this git.
+Currently hosted on Heroku as a single-dyno app so it may take a few moments to load during low traffic interims. If you would like to help me with this app, feel free to email me at chen.david@rutgers.edu with any relevant credentials || request to fork this repo.
+
+-D
